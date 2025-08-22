@@ -28,17 +28,25 @@ This app fetches data from the [TVMaze API](https://www.tvmaze.com/api) using **
 ---
 
 ## 📂 Project Structure
----
-├── index.html # Main HTML file
+``` yaml
+├── index.html             # Main HTML file (entry point)
 ├── src/
-│ └── input.css # Tailwind input file
+│   ├── css/
+│   │   └── input.css      # Tailwind input file (before build)
+│   ├── js/
+│   │   └── app.js         # Main JavaScript logic
+│   └── assets/            # (optional) images, icons, etc.
 ├── dist/
-│ └── output.css # Compiled Tailwind CSS
-├── js/
-│ └── app.js # Main JavaScript logic
-├── package.json
-└── .gitignore
----
+│   ├── css/
+│   │   └── output.css     # Compiled Tailwind CSS (build result)
+│   └── js/
+│       └── app.js         # (optional) if kamu pakai bundler/minifier
+├── package.json           # NPM configuration + scripts
+├── tailwind.config.js     # Tailwind configuration
+├── postcss.config.js      # PostCSS config (if used)
+└── .gitignore             # Files/folders to ignore by Git
+
+```
 
 ---
 
