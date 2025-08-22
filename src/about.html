@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang BioskopKu</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
+    <header
+      class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800"
+    >
+      <nav
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-2xl font-extrabold text-yellow-400"
+            >🎬 BioskopKu</span
+          >
+        </a>
+
+        <ul class="hidden md:flex items-center gap-8 text-gray-300 font-medium">
+          <li>
+            <a
+              href="index.html"
+              class="hover:text-yellow-400 transition-colors duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="hover:text-yellow-400 transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#trending"
+              class="hover:text-yellow-400 transition-colors duration-300"
+              >Trending</a
+            >
+          </li>
+        </ul>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-300 hover:text-yellow-400 text-2xl"
+        >
+          ☰
+        </button>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden flex-col items-center bg-gray-900 text-gray-300 md:hidden"
+      >
+        <a
+          href="index.html"
+          class="block py-3 w-full text-center hover:bg-gray-800 hover:text-yellow-400"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block py-3 w-full text-center hover:bg-gray-800 hover:text-yellow-400"
+          >About</a
+        >
+        <a
+          href="#trending"
+          class="block py-3 w-full text-center hover:bg-gray-800 hover:text-yellow-400"
+          >Trending</a
+        >
+      </div>
+    </header>
+
+    <header
+      class="relative bg-gray-900 text-white py-16 shadow-lg border-b border-gray-800"
+    >
+      <div class="max-w-5xl mx-auto text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Tentang <span class="text-yellow-400">BioskopKu</span>
+        </h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto text-gray-300">
+          Website ini dibuat untuk menampilkan informasi film secara interaktif,
+          menggunakan teknologi modern dan API publik.
+        </p>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-10 text-center">
+        Teknologi yang Digunakan
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">⚡ HTML5</h3>
+          <p class="text-gray-300">
+            Struktur utama website ini dibangun dengan HTML5 untuk
+            mendefinisikan konten dan layout.
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">
+            🎨 TailwindCSS
+          </h3>
+          <p class="text-gray-300">
+            Framework CSS modern berbasis utility-class yang memudahkan
+            pembuatan tampilan estetik dan responsif.
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">
+            💻 JavaScript
+          </h3>
+          <p class="text-gray-300">
+            Memberikan interaktivitas, manipulasi DOM, dan komunikasi dengan API
+            eksternal.
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">📡 Axios</h3>
+          <p class="text-gray-300">
+            Library HTTP client untuk mengambil data dari API TVMaze dengan
+            mudah.
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">
+            🎥 TVMaze API
+          </h3>
+          <p class="text-gray-300">
+            Sumber data utama untuk menampilkan daftar film, detail, rating, dan
+            informasi lainnya. <br />
+            <a href="https://www.tvmaze.com/api" class="text-red-400 italic"
+              >Link Api publik
+            </a>
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition transform duration-300"
+        >
+          <h3 class="text-xl font-semibold text-yellow-300 mb-2">
+            🚀 Responsive Design
+          </h3>
+          <p class="text-gray-300">
+            Website dapat diakses di berbagai perangkat (mobile, tablet,
+            desktop) dengan tampilan optimal.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-center py-6 text-sm text-gray-400">
+      <a href="index.html" class="text-yellow-400 hover:underline"
+        >⬅ Kembali ke Beranda</a
+      >
+
+      <a href="https://www.instagram.com/itszarmaull"
+        >| Develop byFazar Maulana</a
+      >
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
